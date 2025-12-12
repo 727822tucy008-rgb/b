@@ -6,7 +6,7 @@ sudo mkdir -p /var/ossec/api/configuration/auth
 
 echo "2. Creating user file..."
 sudo tee /var/ossec/api/configuration/auth/user << 'EOF'
-{"username":"admin","password":"admin"}
+{"username":"admin","password":"Amal@2004"}
 EOF
 
 echo "3. Setting permissions..."
@@ -18,7 +18,7 @@ sudo tee -a /etc/wazuh-dashboard/opensearch_dashboards.yml << 'EOF'
 wazuh_core.api.host: "https://localhost:55000"
 wazuh_core.api.port: 55000
 wazuh_core.api.username: "admin"
-wazuh_core.api.password: "admin"
+wazuh_core.api.password: "Amal@2004"
 wazuh_core.api.protocol: "https"
 EOF
 
